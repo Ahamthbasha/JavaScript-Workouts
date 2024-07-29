@@ -3,4 +3,3 @@ function hello(name){
 }
 
 hello("basha")
-///func
