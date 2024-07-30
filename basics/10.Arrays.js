@@ -32,3 +32,27 @@ console.log("B",myArr)
 const n2=myArr.splice(1,3)
 console.log(myArr)
 console.log(n2)
+//  Concatenation merging two arrays
+const marvel=["ironman","thor"]
+const dc=["batman","aquaman"]
+const assemble=marvel.concat(dc)
+console.log(assemble)
+//spread operator also like concatenation
+const heroes=[...marvel,...dc]
+console.log(heroes)
+ //flat() will be used to print all elements in the array helps in array inside array
+ const anotherArr= [1,2,3,[4,5,6],7,[6,7,[4,5]]]
+ const realArr=anotherArr.flat(Infinity)
+ console.log(realArr)
+ //checking is the given value is array or not
+console.log(Array.isArray("hitesh"))
+//convert to array
+console.log(Array.from("hitesh"))
+//if we give object to convert into an array it will give empty array because object consist of key value pairs it won't know what to convert so it gives empty array. 
+console.log(Array.from({name:"hitesh"}))
+//of() is used to convert the individual elements into array 
+let score1=10
+let score2=20
+let score3=30
+
+console.log(Array.of(score1, score2, score3))
