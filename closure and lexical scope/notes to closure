@@ -1,0 +1,1 @@
+A closure is the combination of a function bundled together with references to its surrounding state(the lexical environment).closure gives access to an outer functions scope from an inner function.closures are created every time a function is created,at function creation .

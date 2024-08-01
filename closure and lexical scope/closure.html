@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+   /* function init(){
+        let name="mozilla"
+    function displayName(){
+        console.log(name)
+    }
+    displayName()
+    }
+    init()*/
+    function outer(){
+        let username="hitesh"
+        //console.log(secret) inner functions variable can't be accessed from the outside.
+        function inner(){
+             let secret=20
+            console.log("inner",username)
+        }
+        function innertwo(){
+            console.log("inner2")
+          //  console.log(secret)inner function two here accessing the inner functions variable from another functions won't be possible it shows error
+        }
+        inner()
+        innertwo()
+    }
+    outer()
+    console.log("too outer",username)
+    //here whatever we give inside the function it has no access from outside.
+    //a function inside the function.outer functions variables or anything from the outside can be accessed by the inner functions.Here inner functions cant be accessed from the another inner functions.Also inner functions cant be accessed outside the inner function
+</script>
+</html>
