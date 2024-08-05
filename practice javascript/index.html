@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <h1 id="heading" class="chai">HI chai aur code</h1> 
+   <button id="btn">click me</button>
 </body>
 <script>
  /*   let n=prompt("enter a number")
@@ -31,6 +32,36 @@ console.log("congratualtion you guess the  number")*/
 /*
 let username=prompt("enter the username")
 console.log(`@${username}${username.length}`)*/
-
+/*let num=prompt("enter a number")
+let array=[];
+for(let i=1;i<=num;i++){
+    array[i-1]=i
+}
+console.log(array)
+let newSum=array.reduce((acc,curr)=>{
+    return acc+curr
+})
+let newPro=array.reduce((acc,curr)=>{
+    return acc*curr
+})
+console.log(newSum)
+console.log(newPro)*/
+// console.log(document.getElementById("heading"))
+// console.log(document.getElementByClass("chai"))
+// console.log(document.getElementsByTagName("h1"))
+// let button=document.getElementById("btn")
+// button.onclick=()=>{
+//     console.log("button is clicked")
+// }
+let button=document.getElementById("btn")
+button.addEventListener("click",()=>{
+   console.log("button is clicked") 
+})
+button.addEventListener("click",()=>{
+    console.log("button is clicked2")
+})
+button.removeEventListener("click",()=>{
+    console.log("button is clicked2")
+})
 </script>
 </html>
