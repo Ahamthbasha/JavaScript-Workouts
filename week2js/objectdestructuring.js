@@ -25,3 +25,11 @@ const colors=['red','green','yellow']
 const [firstColor ,secondColor]=colors;
 console.log(firstColor)
 console.log(secondColor)
+//object destructuring is nothing but assigning the ibject values into the variable
+const developer={
+    name:"ahamath",
+    role:"mern developer"
+}
+ const{name,role}=developer;
+ console.log(name)
+ console.log(role)
