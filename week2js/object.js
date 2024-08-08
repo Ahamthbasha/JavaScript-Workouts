@@ -20,3 +20,5 @@ const movie={
 console.log(movie.name)
 console.log(movie.director)
 console.log(movie.greet())
+console.log(Object.keys(movie))
+console.log(Object.values(movie))
