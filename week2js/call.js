@@ -16,4 +16,4 @@ function sayHello(greet){
     console.log(`${greet} ${this.name}`)
 }
 sayHello.call(worker1,"hello")
-sayHello.call(worker2,"hi")
+sayHello.call(worker2,"hi") 
